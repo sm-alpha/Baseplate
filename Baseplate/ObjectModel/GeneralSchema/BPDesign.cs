@@ -11,11 +11,11 @@ namespace ObjectModel
     /// </summary>
     public class BPDesign
     {
-        public readonly Column _column;
+        public readonly ISection _column;
         public readonly Baseplate _bp;
         public readonly Foundation _fndn;
         public readonly ExportedResults _exres;
-        public BPDesign(Column column, Baseplate bp, Foundation fndn, ExportedResults exres)
+        public BPDesign(ISection column, Baseplate bp, Foundation fndn, ExportedResults exres)
         {
             _column = column;
             _bp = bp;
