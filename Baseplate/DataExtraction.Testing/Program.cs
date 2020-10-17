@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SAP2000v1;
+using ObjectModel;
 
 namespace DataExtraction.Testing
 {
@@ -216,10 +217,16 @@ namespace DataExtraction.Testing
                 //here check z or check if restrained
                 if(z)
                 {
-
+                    //use this to get reactions -> mySapModel.Results
                 }
-            
+
+                List<ForceObject> exportforce = new List<ForceObject>();
+                ForceObject fobj = new ForceObject(1, 1, 1, 1, 1, 1,name);
+                exportforce.Add(fobj);
             }
+
+            
+
 
             //Get frame thats selected
             //Find base point
