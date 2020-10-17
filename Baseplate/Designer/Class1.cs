@@ -16,6 +16,7 @@ namespace Designer
 
             DesignResults desresult = new DesignResults();
             desresult.MaximumBendingCapacity = 10;
+            desresult.MaximumShearCapacity = 5;
 
             //gravity baseplate design here
 
