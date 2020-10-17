@@ -6,12 +6,21 @@ using System.Threading.Tasks;
 
 namespace ObjectModel
 {
+    /// <summary>
+    /// This is the serializable object that is sent to Revit and to the designer
+    /// </summary>
     public class BPDesign
     {
-        public readonly Column column;
-        public readonly Baseplate bp;
-        public readonly Foundation fndn;
-        public readonly 
-        //public BPDesign()
+        public readonly Column _column;
+        public readonly Baseplate _bp;
+        public readonly Foundation _fndn;
+        public readonly ExportedResults _exres;
+        public BPDesign(Column column, Baseplate bp, Foundation fndn, ExportedResults exres)
+        {
+            _column = column;
+            _bp = bp;
+            _fndn = fndn;
+            _exres = exres;
+        }
     }
 }

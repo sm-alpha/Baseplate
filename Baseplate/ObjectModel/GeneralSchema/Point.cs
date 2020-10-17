@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataExtraction
+namespace ObjectModel.GeneralSchema
 {
-    public class Class1
+    class Point
     {
     }
 }
