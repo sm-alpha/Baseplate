@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataExtraction", "DataExtra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Designer", "Designer\Designer.csproj", "{C4A516C7-4121-4253-A054-7DF954AB724F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataExtraction.Testing", "DataExtraction.Testing\DataExtraction.Testing.csproj", "{79861615-C824-4EAB-A1D0-1E0FEF1A5E89}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{C4A516C7-4121-4253-A054-7DF954AB724F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C4A516C7-4121-4253-A054-7DF954AB724F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C4A516C7-4121-4253-A054-7DF954AB724F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79861615-C824-4EAB-A1D0-1E0FEF1A5E89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79861615-C824-4EAB-A1D0-1E0FEF1A5E89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79861615-C824-4EAB-A1D0-1E0FEF1A5E89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79861615-C824-4EAB-A1D0-1E0FEF1A5E89}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
