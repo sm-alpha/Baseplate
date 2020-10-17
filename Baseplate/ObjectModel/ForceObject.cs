@@ -15,6 +15,7 @@ namespace ObjectModel
         public readonly double _My;
         public readonly double _Mz;
         public readonly string _uid;
+
         public ForceObject(double Fx, double Fy, double Fz, double Mx, double My, double Mz, string uid)
         {
             _Fx = Fx;

@@ -43,7 +43,17 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="ForceObject.cs" />
+    <Compile Include="GeneralSchema\Column.cs" />
+    <Compile Include="GeneralSchema\Concrete.cs" />
+    <Compile Include="GeneralSchema\BPDesign.cs" />
+    <Compile Include="GeneralSchema\DesignResults.cs" />
+    <Compile Include="GeneralSchema\Foundation.cs" />
+    <Compile Include="GeneralSchema\Baseplate.cs" />
+    <Compile Include="GeneralSchema\Steel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ExportObj\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
