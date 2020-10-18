@@ -17,15 +17,13 @@ namespace Designer
         public static DesignResults DesignGravity(BPDesign bpdesign)
         {
 
-            Column col = bpdesign.column;
-            Foundation fndn = bpdesign.fndn;
-            Baseplate bp = bpdesign.bp;
-            ForceObject fo = bpdesign.fo;
-            AnchorRod anchors = bpdesign.anchors;
+            ISection col = bpdesign._column;
+            Foundation fndn = bpdesign._fndn;
+            Baseplate bp = bpdesign._bp;
+            ForceObject exres = bpdesign._exres;
+            //AnchorRod anchors = bpdesign._anchors;
 
-            DesignResults desresult = new DesignResults(col, fndn, bp, fo);
-            desresult.MaximumBendingCapacity = 10;
-            desresult.MaximumShearCapacity = 5;
+            DesignResults desresult = new DesignResults(col, fndn, bp, exres);
 
             //gravity baseplate design here
             double Pu;
@@ -37,22 +35,22 @@ namespace Designer
             double phiPn;
             double m;
             double n;
-            double d = col.d;
-            double bf = col.bf;
+            double d = col._d;
+            double bf = col._bf;
             double X;
             double lambda;
             double lambdaNprime;
             double l;
             double tMin;
-            double fy = bp.steel.fy;
-            double B = bp.width;
-            double N = bp.height;
+            double fy = bp._steel._Fy;
+            double B = bp._width;
+            double N = bp._height;
 
             //Axial checks
-            Pu = fo.Fz;
-            fprimec = fndn.concrete.fprimec;
+            Pu = Math.Abs(exres._Fz);
+            fprimec = fndn._concrete._fprimec;
             bpArea = B*N;
-            fndnArea = fndn.width*fndn.thickness;
+            fndnArea = fndn._width*fndn._height;
             sqrtA2A1 = Math.Min(Math.Sqrt(fndnArea/bpArea),2);   
             Pp = Math.Min(0.85*fprimec*bpArea*sqrtA2A1, 1.7*fprimec*bpArea);
             phiPn = Math.Round(PHI_C*Pp,2);
@@ -72,7 +70,7 @@ namespace Designer
 
 
             // Anchor Rod Checks
-            
+
 
             return desresult;
         }

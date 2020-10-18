@@ -13,6 +13,10 @@ namespace ObjectModel
         public double _thickness { get; set; }
 
         public Steel _steel;
+
+        public double _width {get; set; }
+
+        public double _height {get; set; }
       
     }
 }
