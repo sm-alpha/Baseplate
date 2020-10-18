@@ -6,7 +6,8 @@
              xmlns:local="clr-namespace:WPF.Views"
              mc:Ignorable="d" 
              d:DesignHeight="1102.918" d:DesignWidth="800">
-    <StackPanel>
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel>
         <Button x:Name="button" Content="Import Loads" Margin="10,4,10,0" VerticalAlignment="Top"/>
         <Expander x:Name="BaseplateExpander" Header="Baseplate" Margin="10,10,10,0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" IsExpanded="True">
             <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5,0,10,0" >
@@ -99,4 +100,5 @@
         </Expander>
 
     </StackPanel>
+        </ScrollViewer>
 </UserControl>
