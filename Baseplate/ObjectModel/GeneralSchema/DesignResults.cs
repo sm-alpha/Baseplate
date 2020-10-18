@@ -11,12 +11,9 @@ namespace ObjectModel
     /// </summary>
     public class DesignResults
     {
-        public double YieldingDCR;
         public double AnchorRodTension;
-        public double MaximumBendingCapacity;
         public double BearingCapacity;
         public double BearingDCR;
         public double MinReqdThickness;
-        public double MaximumBendingCapacity;            
     }
 }
