@@ -8,17 +8,11 @@ namespace ObjectModel
 {
     public class Baseplate
     {
-        public readonly string _name;
+        public string _name { get; set; }
 
-        public readonly double _thickness;
+        public double _thickness { get; set; }
 
-        public readonly Steel _steel;
-
-        public Baseplate(string name, double thickness, double width, double height, Steel steel)
-        {
-            _name = name;
-            _thickness = thickness;
-            _steel = steel;
-        }
+        public Steel _steel;
+      
     }
 }
