@@ -43,7 +43,10 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="ExportObj\ForceObject.cs" />
+    <Compile Include="GeneralSchema\AnchorBolt.cs" />
+    <Compile Include="GeneralSchema\BPTransfer.cs" />
     <Compile Include="GeneralSchema\Column.cs" />
+    <Compile Include="GeneralSchema\ColumnDet.cs" />
     <Compile Include="GeneralSchema\Concrete.cs" />
     <Compile Include="GeneralSchema\BPDesign.cs" />
     <Compile Include="GeneralSchema\DesignResults.cs" />

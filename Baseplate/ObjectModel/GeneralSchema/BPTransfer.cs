@@ -9,16 +9,15 @@ namespace ObjectModel
     /// <summary>
     /// This is the serializable object that is sent to the designer
     /// </summary>
-    public class BPDesign
+    public class BPTransfer
     {
-        public readonly ColumnDet _columndet;
+        public readonly Column _column;
         public readonly Baseplate _bp;
         public readonly Foundation _fndn;
         public readonly ExportedResults _exres;
-        public BPDesign(ColumnDet columndet, Baseplate bp, Foundation fndn, ExportedResults exres)
+        public BPTransfer(Column column, Baseplate bp, Foundation fndn, ExportedResults exres)
         {
-            columndet._section.
-            _columndet = columndet;
+            _column = column;
             _bp = bp;
             _fndn = fndn;
             _exres = exres;
