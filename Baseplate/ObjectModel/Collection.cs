@@ -10,7 +10,27 @@ namespace ObjectModel
 {
     public static class Collection
     {
+        public static ISection GetISectionbyName(string name)
+        {
+            //Collect
+            List<ISection> collection = CollectISection();
 
+            //Search and Find
+            ISection output = collection.Find(x => x._name == name);
+
+            return output;
+        }
+
+
+        public static List<ISection> CollectISection()
+        {
+            string inputdata = Properties.Resources.ResourceManager.GetString("WShape.csv");
+            List<ISection> isect = new List<ISection>();
+            string[] RowsArray = inputdata.Split(new[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
+            isect.AddRange(RowsArray.Skip(1).Select(v => ObjectfromCSV<ISection>(v)).ToList());
+
+            return isect;
+        }
 
         public static T ObjectfromCSV<T>(string csvline)
         {

@@ -22,6 +22,7 @@ namespace ObjectModel
         #endregion
 
         #region readonly properties
+        public readonly string _name;
         public readonly double _A;
         public readonly double _Ix;
         public readonly double _Iy;
@@ -61,6 +62,7 @@ namespace ObjectModel
         /// <param name="J"></param>
         public ISection(string Name, double d, double bf, double tf, double tw, double k, double A, double Ix, double Iy, double Sx, double Sy, double Zx, double Zy, double Rx, double Ry, double J)
         {
+            _name = Name;
             _bf = bf;
             _tf = tf;
             _tw = tw;
