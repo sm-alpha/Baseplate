@@ -7,7 +7,7 @@ using ObjectModel;
 
 namespace Designer
 {
-    public class Class1
+    public static class Class1
     {
         public static DesignResults Designerstuff(BPDesign bpdesign)
         {
