@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace ObjectModel
 {
-    public class ColumnDet
+    public class Column
     {
         #region readonly property
         /// <summary>
         /// name
         /// </summary>
-        public readonly ISection _section;
+        public readonly string _section;
 
         /// <summary>
         /// yield stress
@@ -26,7 +26,7 @@ namespace ObjectModel
         /// base class constructor
         /// </summary>
         /// <param name="name"></param>
-        public ColumnDet(ISection section, Steel Fy)
+        public Column(string section, Steel Fy)
         {
             _section = section;
             _Fy = Fy;
