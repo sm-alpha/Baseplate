@@ -8,5 +8,10 @@ namespace ObjectModel.GeneralSchema
 {
     public class AnchorBolt
     {
+        public double _number {get; set;}
+
+        public int _Fu;
+
+        public double _diameter;
     }
 }

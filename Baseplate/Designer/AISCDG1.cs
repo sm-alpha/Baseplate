@@ -25,6 +25,8 @@ namespace Designer
 
             DesignResults desresult = new DesignResults(col, fndn, bp, exres);
 
+            desresults.AnchorRodTension = 10;
+
             //gravity baseplate design here
             double Pu;
             double fprimec;
@@ -70,7 +72,7 @@ namespace Designer
 
 
             // Anchor Rod Checks
-
+            
 
             return desresult;
         }
