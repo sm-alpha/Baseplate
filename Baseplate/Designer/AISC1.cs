@@ -7,10 +7,11 @@ using ObjectModel;
 
 namespace Designer
 {
-    public static class Class1
+    public static class AISC11
     {
-        public static DesignResults Designerstuff(BPDesign bpdesign)
+        public static DesignResults DesignGravity(BPDesign bpdesign)
         {
+
             Column col = bpdesign.column;
             
 
@@ -20,6 +21,11 @@ namespace Designer
             //gravity baseplate design here
 
             return desresult;
+        }
+
+        public static DesignResults DesignLateral(BPDesign input)
+        {
+            //perform shear lug and other stuff here
         }
     }
 }

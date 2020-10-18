@@ -123,6 +123,10 @@
     <Folder Include="ViewModels\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Designer\Designer.csproj">
+      <Project>{c4a516c7-4121-4253-a054-7df954ab724f}</Project>
+      <Name>Designer</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ObjectModel\ObjectModel.csproj">
       <Project>{32f40821-c412-4645-947f-956664569c61}</Project>
       <Name>ObjectModel</Name>
