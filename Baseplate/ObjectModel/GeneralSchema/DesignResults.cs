@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace ObjectModel
 {
+    /// <summary>
+    /// Output object populated from the designer
+    /// </summary>
     public class DesignResults
     {
         public double YieldingDCR;
@@ -15,9 +18,6 @@ namespace ObjectModel
         public double BearingDCR;
         public double MinReqdThickness;
 
-
-
-
-            
+        public double MaximumBendingCapacity;            
     }
 }

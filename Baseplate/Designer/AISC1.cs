@@ -12,8 +12,11 @@ namespace Designer
          public static float PHI_C = 0.65;
          public static float PHI_B = 0.9;
          
-        public static DesignResults Designerstuff(BPDesign bpdesign)
+    public static class AISC11
+    {
+        public static DesignResults DesignGravity(BPDesign bpdesign)
         {
+
             Column col = bpdesign.column;
             Foundation fndn = bpdesign.fndn;
             Baseplate bp = bpdesign.bp;
@@ -74,6 +77,11 @@ namespace Designer
 
 
             return desresult;
+        }
+
+        public static DesignResults DesignLateral(BPDesign input)
+        {
+            //perform shear lug and other stuff here
         }
     }
 }

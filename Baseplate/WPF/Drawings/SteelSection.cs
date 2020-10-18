@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataExtraction
+
+namespace WPF.Drawings
 {
-    public class Class1
+    public class SteelSection 
     {
+
+
     }
 }
