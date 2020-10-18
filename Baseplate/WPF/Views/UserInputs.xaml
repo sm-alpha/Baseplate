@@ -8,7 +8,7 @@
              d:DesignHeight="1102.918" d:DesignWidth="800">
     <StackPanel>
         <Button x:Name="button" Content="Import Loads" Margin="10,4,10,0" VerticalAlignment="Top"/>
-        <Expander x:Name="BaseplateExpander" Header="Baseplate" Height="312" Margin="10,10,10,0" VerticalAlignment="Top" HorizontalAlignment="Stretch" IsExpanded="True">
+        <Expander x:Name="BaseplateExpander" Header="Baseplate" Margin="10,10,10,0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" IsExpanded="True">
             <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5,0,10,0" >
                 <CheckBox x:Name="Enable" Content="Enable"/>
                 <StackPanel Orientation="Horizontal">
@@ -32,7 +32,7 @@
                 </ComboBox>
             </StackPanel>
         </Expander>
-        <Expander x:Name="AnchorBoltsExpander" Header="Anchor Bolts" Height="367" Margin="10,10,10,0" HorizontalAlignment="Stretch" VerticalAlignment="Top">
+        <Expander x:Name="AnchorBoltsExpander" Header="Anchor Bolts" Margin="10,10,10,0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
             <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5,0,10,0" >
 
                 <StackPanel Orientation="Horizontal">
@@ -77,23 +77,23 @@
 
             </StackPanel>
         </Expander>
-        <Expander x:Name="PostInstalledExpander" Header="Post Installed" Height="100" Margin="10,10,10,0" HorizontalAlignment="Stretch" VerticalAlignment="Top">
+        <Expander x:Name="PostInstalledExpander" Header="Post Installed" Margin="10,10,10,0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
             <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5,0,10,0" >
             </StackPanel>
         </Expander>
-        <Expander x:Name="EmbedExpander" Header="Embed" Height="100" Margin="10,10,10,0" HorizontalAlignment="Stretch" VerticalAlignment="Top">
+        <Expander x:Name="EmbedExpander" Header="Embed" Margin="10,10,10,0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
             <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5,0,10,0" >
             </StackPanel>
         </Expander>
-        <Expander x:Name="ShearLugExpander" Header="Shear Lug" Height="100" Margin="10,10,10,0" HorizontalAlignment="Stretch" VerticalAlignment="Top">
+        <Expander x:Name="ShearLugExpander" Header="Shear Lug" Margin="10,10,10,0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
             <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5,0,10,0" >
             </StackPanel>
         </Expander>
-        <Expander x:Name="FoundationExpander" Header="Foundation" Height="100" Margin="10,10,10,0" HorizontalAlignment="Stretch" VerticalAlignment="Top">
+        <Expander x:Name="FoundationExpander" Header="Foundation" Margin="10,10,10,0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
             <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5,0,10,0" >
             </StackPanel>
         </Expander>
-        <Expander x:Name="GussetConnectionExpander" Header="Gusset Connection" Height="100" Margin="10,10,10,0" HorizontalAlignment="Stretch" VerticalAlignment="Top">
+        <Expander x:Name="GussetConnectionExpander" Header="Gusset Connection" Margin="10,10,10,0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
             <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5,0,10,0" >
             </StackPanel>
         </Expander>
