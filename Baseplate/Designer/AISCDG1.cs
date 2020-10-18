@@ -10,7 +10,7 @@ namespace Designer
 
     public static class AISCDG1
     {
-        
+
         public static float PHI_C = 0.65;
         public static float PHI_B = 0.9;
          
@@ -72,6 +72,7 @@ namespace Designer
 
 
             // Anchor Rod Checks
+            
 
             return desresult;
         }
