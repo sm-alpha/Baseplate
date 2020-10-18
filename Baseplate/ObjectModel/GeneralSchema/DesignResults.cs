@@ -8,9 +8,15 @@ namespace ObjectModel
 {
     public class DesignResults
     {
-        public double YielidngDCR;
+        public double YieldingDCR;
         public double AnchorRodTension;
         public double MaximumBendingCapacity;
+        public double BearingCapacity;
+        public double BearingDCR;
+        public double MinReqdThickness;
+
+
+
 
             
     }
