@@ -7,13 +7,13 @@ using ObjectModel;
 
 namespace Designer
 {
-    public static class GravityCalculations
+
+    public static class AISCDG1
     {
-         public static float PHI_C = 0.65;
-         public static float PHI_B = 0.9;
+        
+        public static float PHI_C = 0.65;
+        public static float PHI_B = 0.9;
          
-    public static class AISC11
-    {
         public static DesignResults DesignGravity(BPDesign bpdesign)
         {
 
@@ -72,9 +72,6 @@ namespace Designer
 
 
             // Anchor Rod Checks
-
-
-
 
             return desresult;
         }

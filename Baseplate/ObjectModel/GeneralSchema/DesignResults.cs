@@ -17,7 +17,6 @@ namespace ObjectModel
         public double BearingCapacity;
         public double BearingDCR;
         public double MinReqdThickness;
-
         public double MaximumBendingCapacity;            
     }
 }
